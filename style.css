@@ -1,0 +1,89 @@
+.myForm{ 
+    background-color: azure;  
+}
+.header{
+    position: relative;
+    background-color: rgb(128, 251, 216);
+    height: 200px
+}
+.header>h1{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 0;
+    padding-top: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+.nav-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.text>input{
+    border-color: rgb(236, 189, 189);
+    width: 300px;
+    font-size: large;
+    border-radius: 5px;
+}
+.todo>button{
+        background-color: #3d7ff9; /* Green */
+        border:none;
+        color: white;
+        padding: 4px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+
+}
+.list-item{
+    display: flex;
+    
+
+}
+.btn-delete{
+    height: 40px;
+    border:none;
+    position: absolute;
+    right: 20px;
+    top:15px;
+  
+}
+p{
+    padding-top: 9px;
+    margin: auto 50px;
+    
+}
+.larger-checkbox{
+    width: 20px;
+    height: auto;
+    
+}
+.larger-text{
+    font-size: large;
+    
+}
+input[type=checkbox]{
+    accent-color: #205295;
+}
+input:checked+p {
+    text-decoration: line-through;
+    text-decoration-color: #FF6E31;
+  }
+  [class*="myForm"] {
+    width: 100%;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    body{
+      margin-top: 7%;
+    }
+    h1{
+      font-size: 2.5rem;
+    }
+    .card{
+      min-width: 100%;
+    }
+    .form-control{
+      width: 60%;
+    }
+  }
